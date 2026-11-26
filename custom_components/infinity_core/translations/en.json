@@ -1,0 +1,27 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Add Infinity Core",
+        "description": "The address of the computer or server running Infinity Core.",
+        "data": {
+          "host": "Address",
+          "port": "Port"
+        }
+      },
+      "confirm": {
+        "title": "Add {name}?",
+        "description": "After adding, enable **Home Assistant** in Infinity Core › Settings › Extensions."
+      }
+    },
+    "error": {
+      "cannot_connect": "No Infinity Core answered at this address. Check the address, and that Infinity Core is running.",
+      "not_supported": "This Infinity Core is too old for Home Assistant. Update Infinity Core, then try again."
+    },
+    "abort": {
+      "already_configured": "This Infinity Core is already added.",
+      "not_supported": "This Infinity Core is too old for Home Assistant. Update it first."
+    }
+  }
+}
