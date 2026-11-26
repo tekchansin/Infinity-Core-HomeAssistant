@@ -26,7 +26,7 @@ class Hub:
 
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry) -> None:
         self.hass, self.entry = hass, entry
-        self.ext = ica.Extension(id=EXT_ID, name="Home Assistant", version="1.0.0", publisher="Infinity Core",
+        self.ext = ica.Extension(id=EXT_ID, name="Home Assistant", version="1.0.1", publisher="tekChansin",
                                  uses=["read", "control"], description="Each zone as a media player in Home Assistant.",
                                  state_dir=hass.config.path(".storage", f"infinity_core_{entry.entry_id}"))
         self.zones: dict[str, dict] = {}
